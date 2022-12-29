@@ -194,7 +194,8 @@ def main():
 
     #Dashboard request
     # Local API URI
-    API_URI = 'http://127.0.0.1:5000/predict'
+    API_URI ='https://loanriskp7.herokuapp.com/predict'
+    #API_URI = 'http://127.0.0.1:5000/predict'
     score, result, status, dataviz, shap_features = request_prediction(API_URI, X)
     
     #Visualisation according to new advice
